@@ -1,0 +1,99 @@
+// ? 1. Создайте вектор целых чисел и заполните его числами от 1 до 10. Найдите сумму всех элементов вектора.
+
+#include <iostream>
+#include <vector>
+using namespace std; 
+
+int main(){
+
+    vector < int > cat{1,2,3,4,5,6,7,8,9,10};
+    cout << cat.size() <<endl; //кол-во
+    for (int s=0; s<cat.size(); s++){
+        cout << sum << endl;
+       }
+       
+}
+
+//2. Создайте вектор строк и добавьте в него несколько названий цветов. Выведите на экран все элементы вектора в алфавитном порядке.
+
+#include <iostream>
+#include <vector>
+#include <algorithm>  // sort
+using namespace std; 
+
+int main(){
+
+    vector < string > vec{"red","black","pink","white","green"};
+    cout << vec.size() <<endl; //кол-во
+    sort (vec.begin(), vec.end());  // сортировка
+    cout << endl << "После сортировки: ";
+    
+    for (int i = 0; i < vec.size() ; i++) {
+    cout << vec[i] << " ";
+  }
+}
+
+// ? 3. Создайте два вектора целых чисел одинаковой длины. 
+//Сложите их элементы поэлементно и сохраните результат в третий вектор. Выведите на экран полученный вектор.
+
+#include <iostream>
+#include <vector>
+using namespace std; 
+
+int main(){
+
+    vector < int > vec1{1,2,3,4,5,6,7,8,9,10};
+    vector < int > vec2{1,2,3,4,5,6,7,8,9,10};
+    vector < int > vec3{};
+    cout << vec1.size() <<endl; //кол-во
+    cout << vec2.size() <<endl; //кол-во
+    
+    for (int i = 0; i < vec1.size() ; i++) {
+        for (int j = 0; j < vec2.size() ; j++){
+            vec3[]=vec1[i]+vec2[j];
+        }
+    }
+    cout << vec3.size() <<endl; //кол-во
+    for (int s=0; s<vec3.size(); s++){
+        cout << vec3[s] << endl;
+       }
+    
+}
+
+//4. Создайте вектор чисел и отсортируйте его по убыванию. Выведите отсортированный вектор на экран.
+
+#include <iostream>
+#include <vector>
+#include <algorithm>  // sort
+using namespace std; 
+
+int main(){
+
+    vector < int > vec{1,2,3,4,5,6,7,8,9,10};
+    cout << vec.size() <<endl; //кол-во
+    sort (vec.begin(), vec.end(),greater<int>());// по убыванию
+    
+    for (int i = 0; i < vec.size() ; i++) {
+        cout << vec[i] << endl;
+    }
+    
+}
+
+//5. Создайте вектор случайных чисел и найдите минимальное и максимальное значение в нем. Выведите на экран оба значения.
+
+#include <iostream>
+#include <vector>
+#include <algorithm>  // sort
+using namespace std; 
+
+int main(){
+
+    vector < int > vec{155,27,3,94,5,60,7,8,5429,17860};
+    vec.size(); //кол-во
+    sort (vec.begin(), vec.end());
+    
+    for (int i = 0; i < vec.size() ; i++) {
+        cout << vec[1]<<" "<< vec[9] << endl;
+    }
+    
+}
