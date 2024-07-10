@@ -1,0 +1,60 @@
+/*Подсчет символов :
+-Напишите функцию, которая принимает строку и символ, и возвращает количество вхождений этого символа в строку.
+
+#include <iostream>
+using namespace std;
+
+
+string F(int a[], char* b) {
+	int found = 0;
+	int cout = 0;
+	for (int i = 0;i <= sizeof(a) / sizeof(a[0]); i++) {
+		if (b == a[i]) {
+			found = 1;
+			break;
+		}
+
+	}
+
+	if (found == 1) {
+		for (int s = 1; s == sizeof(a) / sizeof(a[0]); s++) {
+			cout += 1;
+		}
+	else {
+		break;
+	}
+	}
+
+	int main()
+	{
+		int a[4] = { 1, 2, 3, 4 };
+		const char* b = "2";
+		cout << F(a, b) << endl;
+
+
+	}
+
+	/* Напишите функцию, которая принимает строку и удаляет из нее все пробелы.*/
+
+#include <iostream>
+using namespace std;
+
+
+string F(string b[]) {
+	string a;
+	for (char c : a) {
+		if (c != " "){
+			a += c;
+			b = a;
+		}
+		cout << b << endl;
+	}
+
+
+	int main()
+	{
+		string a[4] = { "we ewd wed"};
+		cout << F(b) << endl;
+
+
+	}
