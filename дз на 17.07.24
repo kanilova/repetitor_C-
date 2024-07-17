@@ -1,0 +1,65 @@
+﻿/*Вы пишете код для управления светофорами вашего города.Вам нужна функция для обработки каждого изменения с green, на yellow, на red, а затем green снова на .
+
+Завершите функцию, которая принимает строку в качестве аргумента, представляющего текущее состояние света, и возвращает строку, представляющую состояние, в которое должен измениться свет.
+
+Например, если входные данные равны green, выходные данные должны быть равны yellow.*/
+/*
+#include <iostream>
+using namespace std;
+
+
+void F(string green) {
+	string yellow1;
+	string yellow2;
+	string red;
+	if (green) {
+		cout << yellow1 << endl;
+		}
+	if (yellow1) {
+		cout << red << endl;
+	}
+	if (red) {
+		cout << yellow2 << endl;
+	}
+	if (yellow2) {
+		cout << green << endl;
+	}
+}
+
+
+int main()
+{
+	string green = "Green";
+	string red = "Red";
+	string yellow1 = "Yellow";
+	string yellow2 = "Yellow";
+	F(green);
+
+
+}
+*/
+/*Создайте боевую функцию,
+которая берет текущее здоровье игрока и количество полученного урона, и возвращает новое здоровье игрока.Здоровье не может быть меньше 0 .*/
+
+#include <iostream>
+using namespace std;
+
+void comb(int health, int damage) {
+	int health = 1;
+	int damage = 0;
+	if (health < 100 && damage < 99) {
+		cout << "Восполнить здоровье"<<health == 100 << endl;
+
+	}
+	if (health==100 && damage == 0) {
+		cout << "Здоров" << health == 100 << endl;
+
+	}
+	
+}
+int main()
+{
+	comb(45, 30);
+
+
+}
